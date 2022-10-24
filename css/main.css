@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* ----------- DEFAULT PAGE - every page ----------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+body{
+    background-image: linear-gradient( rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(https://images.unsplash.com/photo-1474546652694-a33dd8161d66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* --------------- GRID ------------- */
+.main-grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+/* ------------ BACKGROUND - MENU ---------- */
+
+.background-menu{
+    display: block;
+
+    width: 250px;
+    height: auto;
+    margin: 100px auto 0px auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+.background-menu .logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.background-menu .line{
+    height: 0px;
+    width: 200px;
+    border-bottom: 1px solid gray;
+    margin: 0px auto 30px auto;
+}
+.background-menu a{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+a.active:hover{
+    background-color: #f2f2f2;
+}
+a.nonactive{
+    color: #cccccc;
+}
+
+/* -------- LOGIN -------- */
+
+.card-login{
+    display: block;
+    width: 500px;
+    height: auto;
+    margin: 100px auto 0px auto;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: white;
+}
+.card-login .logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.card-login .line{
+    height: 0px;
+    width: 300px;
+    border-bottom: 1px solid gray;
+    margin: 0px auto 30px auto;
+}
+.card-login .form{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+form{
+    margin-bottom: 20px;
+}
+input[type=text], input[type=password]{
+    border: 0px;
+    border-bottom: 1px solid gray;
+    padding: 6px 5px;
+    margin: 10px 20px;
+    width: 260px;
+    font-size: medium;
+}
+input[type=text]:focus{
+    outline: none;
+    border-bottom: 2px solid #097762;
+}
+input[type=password]:focus{
+    outline: none;
+    border-bottom: 2px solid #097762;
+}
+.form input[type=submit]:focus{
+    outline: none;
+    box-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+input[type=submit]:hover{
+    box-shadow: 1px 2px 4px rgb(150, 150, 150);
+}
+.form input[type=submit]{
+    width: 240px;
+    height: 30px;
+
+    margin: 10px 30px 40px 30px;
+
+    background-color: #0db496;
+    border: 0px;
+    border-radius: 15px;
+    
+    color: white;
+}
+input[type=date]{
+    border: 0px;
+    border-bottom: 1px solid gray;
+    padding: 6px 5px;
+    margin: 10px 20px;
+    width: 260px;
+    font-size: medium;
+}
+input[type=date]:focus{
+    outline: none;
+    border-bottom: 2px solid #097762;
+}
+.error{
+    margin: 10px 20px;
+
+    color: red;
+    text-align: center;
+
+    font-size: 15px;
+}
+
+/* -------------- Background-CARD ------------- */
+/* tables and stuff*/
+
+.background-card{
+    display: block;
+
+    width: 100%;
+
+    margin: 100px auto 20px auto;
+
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 20px;
+}
+#back-card{
+    margin: 50px auto 20px auto;
+}
+.card{
+    width: 100%;
+    height: 50px;
+
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid #cccccc;
+}
+.card-header{
+    width: 100%;
+
+    padding: 10px 0px 10px 0px;
+}
+.card-header p{
+    width: 80px;
+    display: inline-block;
+    color: gray;
+    font-size: 15px;
+}
+p.short{
+    width: 40px;
+    margin-right: 20px;
+}
+p.long{
+    min-width: 200px;
+    max-width: 250px;
+}
+p.long1{
+    min-width: 150px;
+    max-width: 150px;
+}
+.card button{
+    float: right;
+}
+.card p{
+    padding-left: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    color: gray;
+    font-size: 17px;
+}
+.card-controls{
+    float: right;
+    width: auto;
+}
+.btn-add{
+    background-color: #097762;
+    border: 2px solid #0db496;
+    border-radius: 5px;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+
+    color: white;
+
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-quit{
+    background-color: #cc0000;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    
+    width: auto;
+    height: auto;
+
+    color: white;
+
+    margin: 5px;
+
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-add:hover {
+    box-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+.btn-quit:hover{
+    box-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+.btn-update{
+    background-color: #0066ff;
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+
+    color: white;
+
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-update:hover{
+    box-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+.btn-update2{
+    background-color: #0066ff;
+    border: 2px solid #0000ff;
+    border-radius: 5px;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+
+    color: white;
+
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-update2:hover{
+    box-shadow: 1px 1px 2px rgb(150, 150, 150);
+}
+.btn-add2{
+    background-color: #097762;
+    border: 2px solid #0db496;
+    border-radius: 5px;
+
+    width: auto;
+    height: auto;
+
+    margin: 5px;
+
+    color: white;
+
+    padding: 5px;
+    cursor: pointer;
+}
+select{
+    border: 0px;
+    border-bottom: 1px solid gray;
+
+    padding: 6px 5px;
+    margin: 10px 20px;
+
+    width: 320px;
+
+    font-size: medium;
+    color: gray;
+}
+select:focus{
+    outline: none;
+    border-bottom: 2px solid #097762;
+}
+
+@media print {
+    body{
+        visibility: hidden;
+    }
+    .main-grid{
+        grid-template-columns: 0% 100% 0%;
+    }
+    #back-card{
+        visibility: visible;
+        position: absolute;
+        top: 0px;
+        margin: 0 0 0 0;
+    }
+    .card{
+        height: auto;
+        padding: 0 0 0 0;
+    }
+    .card p{
+        font-size: 10px;
+        margin-top: 0;
+    }
+    p.short{
+        width: 10px;
+    }
+    p.long{
+        min-width: 160px;
+    }
+    p.long1{
+        min-width: 100px;
+    }
+    .card-header p{
+        font-size: 10px;
+    }
+    /*
+    body * {
+        visibility: hidden;
+    }
+    .background-card #back-card{
+        visibility: visible;
+        position: absolute; 
+        top: 5px;
+    }
+    .card-header{
+        visibility: visible;
+    }
+    .card{
+        visibility: visible;
+    }
+    .card p{
+        visibility: visible;
+        font-size: 10px;
+    }
+    .main-grid{
+        grid-template-columns: 0% 100% 0%;
+    }
+    p.short{
+        width: 10px;
+    }
+    p.long{
+        min-width: 120px;
+    }
+    p.long1{
+        min-width: 100px;
+    }*/
+}
